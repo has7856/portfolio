@@ -51,6 +51,9 @@
             text-transform: uppercase;
             margin: 0; /*좌우만 기본값 1배 */
         }
+        .profile{
+            margin: 1.5rem 0;
+        }
         .profile img{
             max-width: 100%;
         }
