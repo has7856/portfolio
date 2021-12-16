@@ -28,6 +28,7 @@
     .contents > p{
         font-size: 40px;
         font-weight: 900;
+        line-height: 50px;
     }
     .keywords > span{
         font-size: 23px;
@@ -74,6 +75,7 @@
         .contents > p{
             font-size: 1.6rem;
             margin-left: 2rem;
+            line-height: 30px;
         }
         .keywords{
             display: flex;
