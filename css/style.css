@@ -1,0 +1,57 @@
+    h1{
+        display: none;
+    }
+    .wrap{
+        /* class="wrap"인 부분 스타일 지정 */
+        width: 1000px;
+        margin: 0 auto;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        align-items: center;
+    }
+    .logo{
+        font-size: 48px;
+        font-weight: 900;
+    }
+    .menu{
+        text-decoration: none;
+        font-size: 24px;
+    }
+    .menu > a{
+        color: #191919;
+        margin: 0 0 0 20px;
+        font-weight: 600;
+    }
+    /* 화면의 가로폭이 360px이 최대라면 */
+    @media screen and (max-width: 360px) {
+        .wrap{
+            width: 100%;
+        }
+        header{
+            flex-direction: column; /*플렉스-방향 : 컬럼방향(=세로) 적용*/
+            height: auto;
+        }
+        .logo{
+            font-size: 48px;
+            padding: 1rem 0;
+        }
+        .menu{
+            background-color: red;
+            width: 100%;
+            padding: 1rem 0;
+            font-size: 1.250rem;
+            display: flex;
+            justify-content: center; /* 컨텐츠 정렬 : 여백을 포함해서 */
+        }
+        .menu > a{
+            color: white;
+            text-transform: uppercase;
+            margin: 0; /*좌우만 기본값 1배 */
+        }
+        .profile img{
+            max-width: 100%;
+        }
+    }
