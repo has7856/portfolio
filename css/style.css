@@ -25,6 +25,20 @@
         margin: 0 0 0 20px;
         font-weight: 600;
     }
+    .contents > p{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .keywords > span{
+        font-size: 23px;
+    }
+    .keywords > span{
+        border-radius: 7px;
+        padding: 5px 10px;
+        background-color: #ff00b8;
+        color: white;
+        margin-right: 16px;
+    }
     /* 화면의 가로폭이 360px이 최대라면 */
     @media screen and (max-width: 480px) {
         .wrap{
@@ -56,5 +70,28 @@
         }
         .profile img{
             max-width: 100%;
+        }
+        .contents > p{
+            font-size: 1.6rem;
+            margin-left: 2rem;
+        }
+        .keywords{
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0;
+            column-gap: 16px;
+        }
+        .keywords > span{
+            border-radius: 10px;
+            padding: 10px 15px;
+            background-color: #ff00b8;
+            color: white;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+        }
+        .keywords > span:first-child{
+            margin-left: 2rem;
+        }
+        .button{
+            margin-left: 2rem;
         }
     }
