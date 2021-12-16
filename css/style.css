@@ -67,7 +67,8 @@
             margin: 0; /*좌우만 기본값 1배 */
         }
         .profile{
-            margin: 1.5rem 0;
+            width: 90%;
+            margin: 2rem auto;
         }
         .profile img{
             max-width: 100%;
