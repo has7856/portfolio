@@ -40,6 +40,7 @@
         color: white;
         margin-right: 16px;
     }
+      video { max-width: 100%; display: block; margin: 20px auto; }
     /* 화면의 가로폭이 360px이 최대라면 */
     @media screen and (max-width: 480px) {
         .wrap{
@@ -97,5 +98,30 @@
         .button{
             margin-left: 2rem;
             text-align: center;
+        }
+        .location{
+            /* 표시 : 플렉스(무조건 가로배치 - 좌우로) */
+            display: flex;
+            /* 내용정렬 : 오른쪽 끝부분 */
+            justify-content: flex-end;
+            background-color: #191919;
+            padding-right: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            color: white;
+        }
+        .location > a{
+            color: white;
+            text-decoration: none;
+        }
+        .inner > ul{
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        .inner{
+            margin: 2% 5%;
+        }
+        .inner iframe{
+            max-width: 100%;
         }
     }
